@@ -14,7 +14,11 @@ app.get("/", function (req, res) {
 });
 
 app.get("/api/whoami", function (req, res) {
-    res.json({ greeting: 'Who am i boy' });
+    const ipAddress = req.headers['x-forwarded-for'] || req.connection.remoteAddress;;
+    const userAgent = req.get('User-Agent');
+    console.log(ipAddress);
+    console.log(userAgent);
+    res.json({ ipaddress: ipAddress, language: '', software: 'Who am i boy' });
 });
 
 app.listen(port, () => {
