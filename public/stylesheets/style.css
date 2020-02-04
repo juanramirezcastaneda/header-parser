@@ -1,4 +1,7 @@
-@import '/path/to/reset-css/reset.css';
+@import 'node_modules/reset-css/reset.css';
+
+/* /Users/juanramirezcastaneda/DevelopmentProjects/header-parser/node_modules/reset-css/reset.css
+/Users/juanramirezcastaneda/DevelopmentProjects/header-parser/public/stylesheets/node_modules/reset-css/reset.css */
 
 body {
 	font-family: 'Roboto', sans-serif;
